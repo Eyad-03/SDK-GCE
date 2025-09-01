@@ -434,7 +434,6 @@ body {
     }
     
     .card {
-        grid-template-columns: 1fr;
         padding: 20px;
     }
 
@@ -473,7 +472,9 @@ body {
         grid-template-columns: 1fr 1fr; 
         border-radius: 15px;
     }
-
+    #aboutGCE-right p {
+        font-size: 10px;
+    }
     .card-1 {       
         width: 150px;
     }
@@ -494,8 +495,6 @@ body {
     }
 
     .card {
-    display: flex;              
-    flex-direction: row;       
     justify-content: space-between;
     padding: 20px;              
     width: 100%;               
@@ -541,12 +540,12 @@ body {
         font-size: 10px;
     }
     #countdown {
-        
-        width: 90%;        
+        width: 100px;        
         height: auto;       
-        padding: 20px;      
+        padding: 10px;      
         margin-top: 40px;
         margin-bottom: 40px;
+        
     }
 
     #countdown h2 {
@@ -560,9 +559,8 @@ body {
     }
 
     .time-box {
-        min-width: unset;   
         width: 100%;        
-        padding: 10px;
+        padding: 5px;
     }
 
     .time-box span {
@@ -594,6 +592,30 @@ body {
         max-width: 90vw;   
         height: auto;
     }
+    .card{
+        display:flex; 
+        flex-wrap:wrap; 
+        justify-content:center;
+        gap:16px; 
+        width:100%; 
+        padding:20px; 
+        border-radius:15px;
+    }
+    .card-1{ 
+        width:150px; }
+    #countdown{ 
+        width:min(420px, 90%);
+        margin:40px auto; 
+        padding:12px; }
+    #countdown-box{ 
+        display:flex; 
+        flex-wrap:wrap; 
+        justify-content:center; 
+        gap:12px; }
+    .time-box{ 
+        flex:1 1 90px;
+        max-width:140px; }
+
 }
 
 
