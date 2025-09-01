@@ -22,6 +22,7 @@ body {
     font-weight: 10px;
     font-style: normal;
 }
+/* first page */
 
 #landing {
     position: fixed;
@@ -37,8 +38,21 @@ body {
     justify-content: center;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
     z-index: 2000;
+    
+
 }
 
+#left-logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    gap: 70px;
+    align-items: center;
+    padding-right:60px;
+}
+#left-logo img {
+    width: 300px;
+}
 #landing.hidden {
     transform: translateY(-100%);
     opacity: 0;
@@ -61,6 +75,7 @@ body {
     background-color: #b81c88;
 }
 
+
 #nav ul {
     display: flex;
     gap: 60px;
@@ -68,7 +83,7 @@ body {
 
 }
 #nav img {
-    width: 240px;
+    width: 130px;
 }
 #nav ul li a {
     text-decoration: none;
@@ -79,8 +94,7 @@ body {
 
 #nav ul li a:hover {
     padding: 10px;
-    background: rgba(21,120,186,0.8);
-    color: white;
+    background: #2babe2;
     border-radius: 5px;
 
 }
@@ -90,8 +104,8 @@ body {
     height: 100vh;
     overflow: hidden;
 }
-#landing img {
-    width: 900px;
+#imge1 img {
+    width: 1000px;
 }
 #bg-video {
     position: absolute;
@@ -139,7 +153,6 @@ body {
     grid-area: logo-left;
 }
 #enter-btn {
-    margin-top: 20px;
     padding: 15px 60px;
     font-size: 18px;
     cursor: pointer;
@@ -150,6 +163,7 @@ body {
     font-weight: bold;
     color: black;
     
+
 }
 #enter-btn:hover{
     color: #2596be ;
@@ -192,20 +206,19 @@ body {
 /* page-e */
 #page-e {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    padding: 40px;
+    grid-template-columns: 1fr 2fr ;
+    padding: 50px 100px ;
+    gap: 50px;
     text-align: center;
     align-items: center;
-    
 }
 #page-e-left img {
-    width: 800px;
+    width: 500px;
 }
 #page-e-right  {
     text-align: right;
     font-weight: bold;
-    font-size: 20px
-    text
+    font-size: 17px
 
 }
 /* page 2 */
@@ -257,7 +270,7 @@ body {
     margin: 20px auto;
     height:0px;
     border-radius: 2px;
-    color: #2596be;
+    color: #2babe2;
     border: 2px solid currentColor;
     width: 80%;
 }
@@ -330,7 +343,7 @@ body {
 }
 .card-1 p {
     font-weight: bold;
-    color:#2596be;
+    color:#2babe2;
 
 }
 .card-1 img {
@@ -367,6 +380,16 @@ body {
         width: 90%;
         padding: 30px;
     }
+    #aboutGCE-righ p {
+        font-size: 70px;
+    }
+    #page-e-left img {
+        width: 230px;
+    }
+    #page-e-right p {
+        font-size: 12px;
+    }
+
 }
 
 /* الهواتف */
@@ -400,7 +423,7 @@ body {
     }
 
     .domain-name {
-        font-size: 17px;
+        font-size: 18px;
 
     }
     .domain-name img {
@@ -461,7 +484,7 @@ body {
     padding: 20px;              
     width: 100%;               
     }
-
+    
     .card h1 {
         font-size: 18px;
     }
@@ -501,7 +524,76 @@ body {
         padding: 5px;
         font-size: 10px;
     }
-    
+    #nav img {
+        width: 80px;
+    }
+    #page-e img {
+        width: 500px;
+        height: auto;
+    }
+    #page-e {
+        grid-template-columns: 1fr;
+        
+        text-align: center;
+    }
+    #page-e p {
+        text-align: center;
+        font-size: 10px;
+    }
+    #countdown {
+        
+        width: 90%;        
+        height: auto;       
+        padding: 20px;      
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #countdown h2 {
+        font-size: 18px;    
+        margin-bottom: 20px;
+    }
+
+    #countdown-box {
+        flex-direction: row; 
+        gap: 15px;
+    }
+
+    .time-box {
+        min-width: unset;   
+        width: 100%;        
+        padding: 10px;
+    }
+
+    .time-box span {
+        font-size: 20px;   
+    }
+
+    .time-box p {
+        font-size: 14px;    
+    }
+
+    #left-logo img {
+        width: 170px;
+    }
+    #left-logo {
+        gap: 10px;
+        padding-right: 30px;
+    }
+    #enter-btn {
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        text-align: center;
+        align-items: center;
+        padding: 7px 60px;
+    }
+
+    #imge1 img {
+        max-width: 90vw;   
+        height: auto;
+    }
 }
 
 
@@ -585,40 +677,7 @@ body {
     font-weight: bold;
     color: #28a745;
 }
-@media (max-width: 480px) {
-    #countdown {
-        
-        width: 90%;        
-        height: auto;       
-        padding: 20px;      
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
 
-    #countdown h2 {
-        font-size: 18px;    
-        margin-bottom: 20px;
-    }
-
-    #countdown-box {
-        flex-direction: row; 
-        gap: 15px;
-    }
-
-    .time-box {
-        min-width: unset;   
-        width: 100%;        
-        padding: 10px;
-    }
-
-    .time-box span {
-        font-size: 20px;   
-    }
-
-    .time-box p {
-        font-size: 14px;    
-    }
-}
 
 /* contact */
 #contact{
