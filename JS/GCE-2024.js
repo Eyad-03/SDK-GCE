@@ -5,14 +5,29 @@ const heroNext  = document.getElementById('heroNext');
 
 // Keep your images (unchanged)
 const slide = [
-  { image: "../image/img1.png" }, { image: "../image/img2.png" },
-  { image: "../image/img3.png" }, { image: "../image/img4.png" },
-  { image: "../image/img5.png" }, { image: "../image/img6.png" },
-  { image: "../image/img7.png" }, { image: "../image/img8.png" },
-  { image: "../image/img9.png" }, { image: "../image/img10.png" },
-  { image: "../image/img11.png" },{ image: "../image/img12.png" },
-  { image: "../image/img13.png" },{ image: "../image/img14.png" },
+  { image: "../image/img24.png" }, 
+  { image: "../image/img25.png" }, 
+  { image: "../image/img26.png" }, 
+  { image: "../image/img27.png" }, 
+  { image: "../image/img28.png" }, 
+  { image: "../image/img30.png" },
+  { image: "../image/img31.png" },
+ { image: "../image/img10.png" },
+  { image: "../image/img11.png" },
+  { image: "../image/img12.png" },
+  { image: "../image/img13.png" },
+  { image: "../image/img14.png" },
   { image: "../image/img15.png" },
+    { image: "../image/img40.png" },
+  { image: "../image/img41.png" },
+ { image: "../image/img42.png" },
+  { image: "../image/img43.png" },
+  { image: "../image/img44.png" },
+  { image: "../image/img45.png" },
+  { image: "../image/img46.png" },
+  { image: "../image/img47.png" },
+
+
 ];
 
 let currentIndex = 0;
