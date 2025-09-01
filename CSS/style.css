@@ -29,7 +29,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, #bc057c, #1b1b1b);
+    background: linear-gradient(to bottom, #b81c88, #1b1b1b);
     color: white;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(188,5,124,0.9);
+    background-color: #b81c88;
 }
 
 #nav ul {
@@ -67,10 +67,12 @@ body {
     list-style: none;
 
 }
-
+#nav img {
+    width: 240px;
+}
 #nav ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: black;
     transition: all 0.6s;
     font-weight: bold;
 }
@@ -88,7 +90,9 @@ body {
     height: 100vh;
     overflow: hidden;
 }
-
+#landing img {
+    width: 900px;
+}
 #bg-video {
     position: absolute;
     top: 0;
@@ -141,15 +145,15 @@ body {
     cursor: pointer;
     border-radius: 20px;
     border: none;
-    background-color: white;
+    background-color: #2babe2;
     transition: all 0.5s;
     font-weight: bold;
     color: black;
     
 }
 #enter-btn:hover{
-    color: white;
-    background-color: #2596be;
+    color: #2596be ;
+    background-color: rgb(0, 0, 0);
     padding: 20px 70px;
     font-weight: bold
 }
@@ -185,7 +189,25 @@ body {
 #aboutGCE-right p {
     font-size: 16px;
 }
+/* page-e */
+#page-e {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+    
+}
+#page-e-left img {
+    width: 800px;
+}
+#page-e-right  {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px
+    text
 
+}
 /* page 2 */
 
 #page2 img {
@@ -479,10 +501,7 @@ body {
         padding: 5px;
         font-size: 10px;
     }
-    /* countdown */
-    #countdown {
-
-    }
+    
 }
 
 
