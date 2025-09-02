@@ -55,7 +55,7 @@ body
 {
     width: 271px;
     height: 36px;
-    background: linear-gradient(90deg, rgb(188, 6, 126), #3238ca);
+    background: linear-gradient(90deg, #b81c88, #2babe2);
     color: white;
     font-size: 13px;
     padding: 8px 14px;
@@ -185,7 +185,7 @@ font-weight: 600;
 .gce-year
 {
     width: 90px;
-    background: linear-gradient(90deg, rgb(188, 6, 126), #3238ca);
+    background: linear-gradient(90deg, #b81c88, #2babe2);
     color: white;
     font-size: 13px;
     padding: 5px 14px;
@@ -195,6 +195,10 @@ font-weight: 600;
     margin-bottom: 16px;
 }
 
+
+/*
+#3238ca
+*/
 
 #grid-2023
 {
@@ -238,7 +242,7 @@ font-weight: 600;
     padding: 6px 10px;
     border-radius: 999px;
     border: 1px solid rgb(188, 6, 126);
-    background: linear-gradient(90deg, rgb(188, 6, 126), #3238ca);
+    background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
     color: white
 
 }
@@ -246,8 +250,8 @@ font-weight: 600;
 
 .skill-badge span:hover 
 {
-    border: 1px solid #3238ca;
-    background: #3238ca;
+    border: 1px solid #2babe2;
+    background: #2babe2;
     color: white;
 }
 
@@ -324,7 +328,7 @@ color: #555a7b;
 #leftArrow
 {
 
-    background: linear-gradient(90deg, rgb(188, 6, 126), #3238ca);
+    background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
     border: none;
     border-radius: 50%;
     padding: 10px;
@@ -345,7 +349,7 @@ color: #555a7b;
 {
 
 
-    background: linear-gradient(90deg, rgb(188, 6, 126), #3238ca);
+    background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
     border: none;
     border-radius: 50%;
     padding: 10px;
@@ -409,7 +413,7 @@ border-radius: 20px;
 .bg-profile
 {
 
-background-color: #3238ca;
+background-color: #2babe2;
 border-radius: 50%;
 width: 38px;
 height: 48px;
@@ -483,7 +487,7 @@ left: 10px;
 #left-arrow
 {
     display: flex;
-    background: linear-gradient(90deg, rgb(188, 6, 126), #3238ca);
+    background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
     border-radius: 50%;
     color: white;
     padding: 10px;
@@ -501,7 +505,7 @@ left: 10px;
 #right-arrow
 {
     display: flex;
-    background: linear-gradient(90deg, rgb(188, 6, 126), #3238ca);
+    background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
     border-radius: 50%;
     color: white;
     padding: 10px;
@@ -528,7 +532,7 @@ left: 10px;
 
 
 .part1-card{
-  background: linear-gradient(135deg, rgb(188, 6, 126), #3238ca);
+  background: linear-gradient(135deg, #b81c88, #2babe2);
   background-size: 200% 200%;
   transition: background-position .6s ease;
 }
@@ -583,7 +587,7 @@ left: 10px;
 .hero-badge{
   position: absolute;
   left: 24px; top: 24px;
-  background: linear-gradient(90deg, rgb(188, 6, 126), #3238ca);
+  background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
   color:#fff; font-weight:700; font-size:14px;
   padding:6px 14px; border-radius:999px; 
   box-shadow: 0 6px 16px rgba(0,0,0,.18);
@@ -622,7 +626,7 @@ left: 10px;
   width: 42px; height: 42px; border-radius: 50%;
   border: none; cursor: pointer; font-size: 18px;
   color: #fff;
-  background: linear-gradient(90deg, rgb(188, 6, 126), #3238ca);
+  background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
   box-shadow: 0 8px 18px rgba(0,0,0,.18);
   display: grid; place-items: center;
   transition: transform .18s ease, filter .18s ease;
@@ -666,7 +670,7 @@ left: 10px;
 
 .reels
 {
-    background: linear-gradient(90deg, rgb(188, 6, 126), #3238ca);
+    background: linear-gradient(90deg, rgb(188, 6, 126), #2babe2);
     display: flex;
     align-items: center;
     gap: 0px;
