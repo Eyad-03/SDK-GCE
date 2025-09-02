@@ -738,6 +738,144 @@ left: 10px;
   .chev.next{ left: 60px; }
 
 
+#maingrid-header
+{
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+#gridone-header 
+{
+    margin-left: 0px;
+
+}
+
+#gridone-header h1
+{
+    width: 385px;
+    font-size: 35px;
+}
+
+#gridone-header p
+{
+    width: 360px;
+    position: relative;
+    bottom: 30px;
+
+}
+
+
+#grid-2023
+{
+
+grid-template-columns: auto;
+margin-left: 40px;
+}
+
+.gce-title h3
+{
+    width: 470px;
+}
+
+.gce-title
+{
+    margin-left: 14px;
+}
+
+.hero-gallery
+{
+    margin-left: 40px;
+}
+
+#header-review
+{
+    margin-left: 60px;
+}
+
+#review-card
+{
+    display: grid;
+    grid-template-columns: auto ;
+    margin-left: 30px;
+}
+
+#grid-static
+{
+    width: 360px;
+}
+
+.static-number
+{
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+.static-domain
+{
+    width: 320px;
+    height: 100px;
+}
+
+.static-number p
+{
+font-size: 12px;
+font-weight: 400;
+
+}
+
+.static-one
+{
+    gap: 0px;
+}
+
+
+.static-number h4
+{
+
+width: 50px;
+font-weight: 700;
+}
+
+.static-number p
+{
+width: 80px;
+}
+
+.pre-project
+{
+    width: 390px;
+}
+
+#arrow
+{
+    display: flex;
+    gap: 35px;
+    justify-content: start;
+    position: relative;
+    top: 900px;
+    left: 160px;
+}
+
+#left-arrow
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+
+#right-arrow
+{
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
 
 
 }
@@ -801,6 +939,144 @@ left: 10px;
   .chev.prev{ left: 12px; }
   .chev.next{ left: 60px; }
 
+  #maingrid-header
+{
+
+    gap: 90px;
+}
+
+#gridone-header 
+{
+    margin-left: 0px;
+
+}
+
+#gridone-header h1
+{
+    width: 385px;
+    font-size: 35px;
+}
+
+#gridone-header p
+{
+    width: 360px;
+    position: relative;
+    bottom: 30px;
+
+}
+
+
+#grid-2023
+{
+
+
+margin-left: 40px;
+}
+
+.gce-title h3
+{
+    width: 470px;
+}
+
+.gce-title
+{
+    margin-left: 14px;
+}
+
+.hero-gallery
+{
+    margin-left: 40px;
+}
+
+#header-review
+{
+    margin-left: 90px;
+}
+
+#review-card
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 60px;
+}
+
+#grid-static
+{
+    width: 460px;
+}
+
+.static-number
+{
+    width: 180px;
+    height: 110px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+.static-domain
+{
+    width: 415px;
+    height: 100px;
+}
+
+.static-number p
+{
+font-size: 12px;
+font-weight: 400;
+
+}
+
+.static-one
+{
+    gap: 0px;
+}
+
+
+.static-number h4
+{
+
+width: 50px;
+font-weight: 700;
+}
+
+.static-number p
+{
+width: 80px;
+}
+
+.pre-project
+{
+    width: 390px;
+}
+
+#arrow
+{
+    display: flex;
+    gap: 35px;
+    justify-content: start;
+    position: relative;
+    top: 480px;
+    left: 630px;
+}
+
+#left-arrow
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+
+#right-arrow
+{
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
 
 }
 
