@@ -245,7 +245,6 @@ font-weight: 600;
 .pre-project
 {
     width: 513px;
-
     background: #fff;
     border: 2px solid  rgb(188, 6, 126);
     border-radius:18px;
@@ -1115,6 +1114,8 @@ width: 80px;
     top: 0px;
     right: 0px;
 }
+
+
 
 }
 
