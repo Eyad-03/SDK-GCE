@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautiful Footer – HTML & CSS Only</title>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --bg2:#111836;
+      --text:#e8ecf3;
+      --muted:#9aa3b2;
+      --accent:#60a5fa;
+      --ring: rgba(96,165,250,.35);
+    }
+
+    *{box-sizing:border-box}
+    body{margin:0; font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; color:var(--text); background:#0a0f1e;}
+
+    /* ===== Footer ===== */
+    footer.footer{
+      background: radial-gradient(1200px 600px at 80% -10%, rgba(59,130,246,.15), transparent 60%),
+                  radial-gradient(900px 500px at -20% 120%, rgba(34,197,94,.12), transparent 60%),
+                  linear-gradient(180deg, var(--bg), var(--bg2));
+      position: relative;
+      overflow:hidden;
+      padding: 56px 20px 28px;
+      border-top: 1px solid rgba(255,255,255,.06);
+      isolation:isolate;
+    }
+
+    .container{max-width:1100px; margin-inline:auto;}
+
+    .footer-top{
+      display:grid;
+      grid-template-columns: 1.2fr .9fr .9fr;
+      gap: 28px;
+    }
+
+    /* Brand */
+    .brand{
+      display:flex; flex-direction:column; gap:14px;
+    }
+    .logo{
+      display:inline-flex; align-items:center; gap:12px; text-decoration:none; color:var(--text);
+      font-weight:700; font-size:1.125rem; letter-spacing:.2px;
+    }
+    .logo-mark{
+      inline-size:36px; block-size:36px; border-radius:12px; display:grid; place-items:center;
+      background: linear-gradient(135deg, #60a5fa, #22c55e);
+      box-shadow: 0 8px 22px rgba(96,165,250,.35), 0 2px 8px rgba(34,197,94,.25);
+    }
+    .brand p{margin:0; color:var(--muted); line-height:1.6;}
+
+    /* Links */
+    .footer-col h4{margin:0 0 14px; font-size:0.95rem; letter-spacing:.4px; opacity:.95}
+    .footer-links{list-style:none; padding:0; margin:0; display:grid; gap:10px}
+    .footer-links a{
+      color:var(--muted); text-decoration:none; font-size:.95rem; transition:.25s ease;
+      padding:4px 0; border-radius:8px; display:inline-flex; align-items:center; gap:10px;
+    }
+    .footer-links a:hover{ color:var(--text); transform: translateX(3px); }
+
+    /* Socials */
+    .socials{display:flex; gap:10px; margin-top:8px}
+    .socials a{
+      inline-size:40px; block-size:40px; display:grid; place-items:center; border-radius:50%;
+      background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08);
+      text-decoration:none; transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 4px 14px rgba(0,0,0,.25);
+    }
+    .socials a:hover{ transform:translateY(-3px); box-shadow:0 10px 24px rgba(0,0,0,.35); background:rgba(255,255,255,.12); }
+    .socials svg{width:20px; height:20px; fill:currentColor; color:#cbd5e1}
+
+    /* Divider & bottom */
+    .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.12), transparent); margin:28px 0}
+
+    .footer-bottom{
+      display:flex; align-items:center; justify-content:space-between; gap:16px; color:var(--muted); font-size:.92rem;
+    }
+
+    .policy{display:flex; gap:14px; flex-wrap:wrap}
+    .policy a{ color:var(--muted); text-decoration:none; transition:.2s; }
+    .policy a:hover{ color:var(--text) }
+
+    /* Responsive */
+    @media (max-width:900px){
+      .footer-top{ grid-template-columns:1fr 1fr; }
+    }
+    @media (max-width:640px){
+      footer.footer{ padding: 44px 16px 24px; }
+      .footer-top{ grid-template-columns:1fr; }
+      .footer-bottom{ flex-direction:column; align-items:flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Your page content would go here ===== -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="brand">
+          <a class="logo" href="#" aria-label="Brand home">
+            <span class="logo-mark" aria-hidden="true">
+              <!-- Simple spark logo -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2v6M12 16v6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M16 12h6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2"/>
+              </svg>
+            </span>
+            <span>SDK Travel</span>
+          </a>
+          <p>Discover places, book flights, and plan experiences with style. Follow us on social for updates and deals.</p>
+
+          <div class="socials" aria-label="Social media">
+            <a href="#" aria-label="Follow on X/Twitter">
+              <!-- X / Twitter -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2H21l-6.44 7.37L22 22h-6.9l-4.52-5.88L4.4 22H2l6.88-7.87L2 2h6.9l4.1 5.35L18.244 2Zm-2.42 18h1.88L8.3 4H6.42l9.404 16Z"/></svg>
+            </a>
+            <a href="#" aria-label="Follow on Instagram">
+              <!-- Instagram -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2A2.8 2.8 0 1 0 12 15.8 2.8 2.8 0 0 0 12 9.2Zm5.35-.95a.85.85 0 1 1 0 1.7.85.85 0 0 1 0-1.7Z"/></svg>
+            </a>
+            <a href="#" aria-label="Subscribe on YouTube">
+              <!-- YouTube -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.54 6.42a3 3 0 0 0-2.1-2.12C18.82 3.8 12 3.8 12 3.8s-6.82 0-8.44.5A3 3 0 0 0 1.46 6.4 31.5 31.5 0 0 0 1 12a31.5 31.5 0 0 0 .46 5.58 3 3 0 0 0 2.1 2.12c1.62.5 8.44.5 8.44.5s6.82 0 8.44-.5a3 3 0 0 0 2.1-2.12c.3-1.84.46-3.7.46-5.58s-.16-3.74-.46-5.58ZM9.75 8.75 15.5 12l-5.75 3.25V8.75Z"/></svg>
+            </a>
+            <a href="#" aria-label="Connect on LinkedIn">
+              <!-- LinkedIn -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 5 2.12 5 3.5ZM.5 8.5h4V23h-4V8.5Zm7 0h3.84v1.98h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.09V23h-4v-5.9c0-1.4-.02-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V23h-4V8.5Z"/></svg>
+            </a>
+            <a href="#" aria-label="Join us on Facebook">
+              <!-- Facebook -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.48 17.52 2 11.94 2S1.88 6.48 1.88 12.06C1.88 17.04 5.54 21.1 10.3 22v-7.03H7.76v-2.9h2.54V9.83c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.19 2.23.19v2.45h-1.26c-1.24 0-1.62.77-1.62 1.57v1.88h2.76l-.44 2.9h-2.32V22c4.76-0.9 8.42-4.96 8.42-9.94Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Special Offers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Live Chat</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="divider" role="separator" aria-hidden="true"></div>
+
+      <div class="footer-bottom">
+        <div>© <span id="year">2025</span> SDK Travel. All rights reserved.</div>
+        <div class="policy">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

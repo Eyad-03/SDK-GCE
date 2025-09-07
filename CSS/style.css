@@ -298,6 +298,7 @@ body {
     text-align: center;
     display: flex;
     gap: 10px;
+
 }
 
 .card {
@@ -325,7 +326,7 @@ body {
     display: flex;
     gap: 30px;
 }
-#whisper-icon img {
+#whisper-icon svg {
     width: 60px;
 }
 
@@ -394,6 +395,8 @@ body {
     #page-e-right p {
         font-size: 12px;
     }
+
+    
 
 }
 
@@ -621,6 +624,39 @@ body {
         flex:1 1 90px;
         max-width:140px; }
 
+#footer-part3
+{
+    display: none;
+
+}
+
+    #footer {
+
+        gap: 15px;
+        padding: 15px;
+        height: 100%;
+    }
+
+    #footer-part1 h3,
+    #footer-part2 h3 {
+        font-size: 16px;
+    }
+
+    #social-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+        #contact-icon
+        {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+
 }
 
 
@@ -811,6 +847,29 @@ body {
         font-size: 16px;     
         margin: 8px 0;
     }
+
+    
+}
+
+
+@media (max-width: 394px)
+{
+
+    #footer {
+        flex-direction: column;  /* stack sections */
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+        width: 100%;             /* still full width */
+    }
+
+    #footer-part1
+    {
+
+        margin-right: 50px;
+    }
+
+
 }
 
 /* --- dropdown base --- */
@@ -857,4 +916,99 @@ body {
     transform: translateY(0);
     pointer-events: auto;
 }
+
+#footer {
+    background-color: #b81c88;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;          /* ✅ force full width */
+    min-height: 143px;    /* allow growth if content needs more space */
+    margin-top: 100px;
+    padding: 20px;        /* add breathing space */
+    box-sizing: border-box;
+}
+
+
+#footer-part1
+{
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: 40px;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#social-icon
+{
+    display: flex;
+    gap: 10px;
+}
+
+#social-icon svg
+{
+    color: #2596be;
+    width: 25px;
+    height: 25px;
+    gap: 10px;
+}
+
+#footer-part2
+{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+#contact-icon
+{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+#contact-icon svg
+{
+    width: 15px;
+    height: 15px;
+}
+
+.map-icon
+{
+text-decoration: none;
+color: white;
+background-color: #2babe2;
+border-radius: 10px;
+padding: 4px 10px;
+width: 120px;
+text-align: center;
+}
+
+.map-icon svg
+{
+    width: 40px;
+    height: 20px;
+}
+
+#footer-part3
+{
+position: relative;
+top: 10px;
+}
+
+#footer-part3 img
+{
+    width: 150px;
+    height: 70px;
+}
+
+
+
 
