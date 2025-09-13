@@ -894,7 +894,35 @@ body {
     width: 35px;
     height: 35px;
 }
+
+
     
+}
+
+@media (min-width:482px) and (max-width:579px)
+{
+#whisper-icon
+{
+    align-items: center;
+}
+
+#whisper-icon svg
+{
+    width: 35px;
+    height: 35px;
+}
+
+#countdown
+{
+    padding: 20px;
+    width: 310px;
+}
+
+#countdown h2
+{
+    font-size: 20px;
+}
+
 }
 
 
