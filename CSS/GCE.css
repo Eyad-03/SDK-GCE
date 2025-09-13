@@ -722,6 +722,7 @@ left: 10px;
     .feedback-card
     {
         margin-right: 20px;
+        width: 330px;
     }
 
 
@@ -773,27 +774,29 @@ left: 10px;
 #maingrid-header
 {
     grid-template-columns: auto;
-    gap: 10px;
+
+
 }
 
 #gridone-header 
 {
-    margin-left: 0px;
+position: relative;
+right: 100px;
 
 }
 
 #gridone-header h1
 {
-    width: 385px;
-    font-size: 35px;
+    width: 335px;
+    font-size: 32px;
 }
 
 #gridone-header p
 {
-    width: 360px;
+    width: 330px;
     position: relative;
     bottom: 30px;
-
+    font-size: 16px;
 }
 
 
@@ -801,39 +804,57 @@ left: 10px;
 {
 
 grid-template-columns: auto;
-margin-left: 40px;
+margin-left: 0px;
 }
 
 .gce-title h3
 {
-    width: 470px;
+    width: 400px;
+
+}
+
+#title-achevment h3 
+{
+    font-size: 30px;
 }
 
 .gce-title
 {
-    margin-left: 14px;
+    margin-left: 0px;
 }
 
 .hero-gallery
 {
-    margin-left: 40px;
+    margin-left: 0px;
 }
 
 #header-review
 {
-    margin-left: 60px;
+    margin-left: 10px;
+}
+
+#header-review h2
+{
+    font-size: 23px;
 }
 
 #review-card
 {
     display: grid;
     grid-template-columns: auto ;
-    margin-left: 30px;
+    margin-left: 10px;
+}
+
+#review
+{
+    margin-left: 0px;
 }
 
 #grid-static
 {
     width: 360px;
+position: relative;
+right: 70px;
 }
 
 .static-number
@@ -881,7 +902,7 @@ width: 80px;
 
 .pre-project
 {
-    width: 390px;
+    width: 345px;
 }
 
 #arrow
