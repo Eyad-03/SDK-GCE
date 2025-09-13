@@ -883,6 +883,17 @@ body {
 {
     font-size: 20px;
 }
+
+#whisper-icon
+{
+    align-items: center;
+}
+
+#whisper-icon svg
+{
+    width: 35px;
+    height: 35px;
+}
     
 }
 
