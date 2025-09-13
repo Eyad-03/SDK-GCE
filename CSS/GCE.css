@@ -1221,6 +1221,7 @@ width: 80px;
     grid-template-columns: 1fr;     /* single column */
     gap: 20px;
     margin: 32px 16px 0;
+    margin-bottom: 120px;
   }
   .pre-project{
     padding: 18px;
@@ -1423,6 +1424,13 @@ width: 80px;
     margin-top: 12px;
     padding: 0 16px;
   }
+
+  #review
+  {
+    margin-top: 120px;
+  }
+
+
 }
 
 /* ===== Tablets (≥500px and ≤1024px) ===== */
