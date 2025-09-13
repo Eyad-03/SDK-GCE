@@ -71,6 +71,7 @@ body
     width: 131px;
     height: 36px;
     background: linear-gradient(90deg, #b81c88, #2babe2);
+    margin-bottom: 50px;
     color: white;
     font-size: 13px;
     padding: 8px 14px;
@@ -87,6 +88,14 @@ body
     align-items: center;
     transition: transform .35s ease, box-shadow .35s ease, filter .35s ease;
 
+}
+
+
+
+
+.btn-home span
+{
+  color: white !important;
 }
 
 
@@ -1169,8 +1178,8 @@ width: 80px;
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  #gridone-header h1{ font-size: clamp(26px,8vw,34px); max-width: 100%; margin-bottom: 40px;}
-  #gridone-header p{ max-width: 100%; }
+  #gridone-header h1{ font-size:23px; max-width: 100%; margin-bottom: 40px;}
+  #gridone-header p{ max-width: 100%; font-size:12px }
   .btn-home{ align-self: end; }
   #grid-static{ 
     order: 2;
