@@ -875,10 +875,14 @@ body {
 
 #countdown
 {
-    padding: 10px;
+    padding: 20px;
+    width: 300px;
 }
 
-
+#countdown h2
+{
+    font-size: 20px;
+}
     
 }
 
