@@ -714,10 +714,6 @@ left: 10px;
 @media (max-width:500px)
 {
 
-    #header-review h2
-    {
-       width: 500px;
-    }
 
     .feedback-card
     {
@@ -1137,7 +1133,14 @@ width: 80px;
   height:auto;
   font-size: clamp(28px,5.2vw,56px);
   line-height:1.08;
+  margin-bottom: 30px;
 }
+
+.reels
+{
+    margin-top: 40px;
+}
+
 #gridone-header p{
   max-width: 60ch;
   height:auto;
@@ -1150,11 +1153,13 @@ width: 80px;
   display:inline-flex;
   width:auto; height:auto;
   padding:8px 14px;
-  margin-left:auto;            /* keeps it to the right on wide screens */
+  margin-left:auto;  
+        /* keeps it to the right on wide screens */
 }
 #grid-static{
   width:100%;
   max-width: 520px;
+
 }
 .static-number,.static-domain{ width:auto; height:auto; }
 
@@ -1164,11 +1169,17 @@ width: 80px;
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  #gridone-header h1{ font-size: clamp(26px,8vw,34px); max-width: 100%; }
+  #gridone-header h1{ font-size: clamp(26px,8vw,34px); max-width: 100%; margin-bottom: 40px;}
   #gridone-header p{ max-width: 100%; }
   .btn-home{ align-self: end; }
-  #grid-static{ order: 2; }    /* comes after the text block */
+  #grid-static{ 
+    order: 2;
+  width: auto;                /* stop fixed width */
+  max-width: 100%;
+}    /* comes after the text block */
 }
+
+
 
 /* ====== tablets (≥500px and ≤1024px) ====== */
 @media (min-width:500px) and (max-width:1024px){
@@ -1191,6 +1202,17 @@ width: 80px;
 .pre-project{
   width: auto;                /* stop fixed width */
   max-width: 100%;
+}
+
+@media (min-width:500px) and (max-width:811px)
+{
+      #maingrid-header{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #gridone-header h1{ margin-bottom: 40px;}
+
 }
 
 /* === Phones (≤500px) === */
@@ -1370,13 +1392,13 @@ width: 80px;
 
 /* Arrows: keep in normal flow (no big offsets) */
 #arrow{
-  position: static;
+  position: r;
   max-width: 1200px;
-  margin: 12px auto 0;
+  margin: 22px auto 0;
   padding: 0 24px;
   display: flex;
-  justify-content: space-between;
-  gap: 16px;
+  justify-content: center;
+  gap: 36px;
 }
 #left-arrow,
 #right-arrow{
@@ -1415,6 +1437,92 @@ width: 80px;
     max-width: 940px;
     margin-top: 12px;
     padding: 0 20px;
-    justify-content: space-between;
+    justify-content: end;
+    position: relative;
+    display: none;
+  }
+}
+/* Prevent accidental horizontal scroll as a safety net */
+html, body { overflow-x: hidden; }
+
+/* ---- Mobile (≤500px) ---- */
+@media (max-width:500px){
+  /* Stop giant gaps / offsets */
+  #arrow { gap: 12px; position: static; margin: 12px auto 0; }
+  #left-arrow, #right-arrow { position: static; }
+
+  /* Center the gallery instead of pushing it off-screen */
+  .hero-gallery { margin: 24px auto 16px; }
+
+  /* Keep review cards inside the viewport */
+  #review-card { margin-left: 0; padding: 0 16px; }
+
+  /* Make fixed-width blocks fluid */
+  #grid-static { width: auto; max-width: 100%; }
+  .pre-project { width: auto; max-width: 100%; }
+}
+
+/* ---- Tablet (500–1024px) ---- */
+@media (min-width:500px) and (max-width:1024px){
+  #arrow { gap: 16px; position: static; margin: 12px auto 0; }
+  #left-arrow, #right-arrow { position: static; }
+  .hero-gallery { margin: 40px auto 20px; }
+  #review-card { margin-left: 0; padding: 0 20px; }
+  #grid-static { width: auto; max-width: 560px; }
+}
+/* === Achievements title area (base clean-up) === */
+#title-achevment{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap: 14px;
+  padding: 12px 20px;
+  margin-top: clamp(60px, 12vw, 220px); /* shrink on small screens */
+}
+.gce-title{ margin-left: 0; }
+.gce-year{ 
+  font-weight:700; 
+  padding: 6px 12px; 
+  border-radius: 999px; 
+}
+/* let the heading be fluid instead of fixed width */
+.gce-title h3{
+  margin: 0;
+  width: auto;
+  max-width: 100%;
+  font-size: clamp(22px, 4.4vw, 32px);
+  line-height: 1.15;
+}
+
+/* === Phones (≤500px) === */
+@media (max-width:500px){
+  #title-achevment{
+    flex-direction: column;           /* badge above the title */
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px 16px;
+    margin-top: 36px;
+  }
+  .gce-year{
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-bottom: 4px;               /* small space above h3 */
+  }
+  .gce-title h3{
+    font-size: clamp(20px, 7.2vw, 26px);
+  }
+}
+
+/* === Tablets (500–1024px) === */
+@media (min-width:500px) and (max-width:1024px){
+  #title-achevment{
+    flex-direction: row;              /* keep in one line */
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+    margin-top: 60px;
+  }
+  .gce-title h3{
+    font-size: clamp(24px, 3.2vw, 28px);
   }
 }
