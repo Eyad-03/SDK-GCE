@@ -1080,8 +1080,7 @@ top: 10px;
 
 #footer-part3 img
 {
-    width: 150px;
-    height: 70px;
+    max-width: 130px;
 }
 
 
