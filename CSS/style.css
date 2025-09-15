@@ -540,6 +540,7 @@ body {
     }
     #page-e {
         grid-template-columns: 1fr;
+        padding: 30px 10px;
         
         text-align: center;
     }
